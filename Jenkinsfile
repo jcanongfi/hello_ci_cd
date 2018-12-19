@@ -27,7 +27,7 @@ pipeline {
                 }
             }
         }
-        stage('Docker') {
+        stage('Image') {
             agent {
               docker {
                 image 'docker:18.03-dind'
@@ -37,7 +37,7 @@ pipeline {
                 sh 'docker build -t mon_appli:latest .'
             }
         }
-        stage('Run') {
+        stage('Push') {
             agent {
               docker {
                 image 'docker:18.03-dind'
