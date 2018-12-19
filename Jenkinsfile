@@ -38,13 +38,8 @@ pipeline {
             }
         }
         stage('Push') {
-            agent {
-              docker {
-                image 'docker:18.03-dind'
-              }
-            }
             steps {
-                sh 'docker run -d --name hello -p 8081:8080 mon_appli'
+                sh 'sleep 10'
             }
         }
     }
