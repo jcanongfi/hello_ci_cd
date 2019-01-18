@@ -15,3 +15,7 @@ Test d'intégration continue et de déploiement continu
 - branche master pour déploiement continu sur l'environnement de production
   * kubectl apply
 
+Prérequis
+ - Credential ID 'registry' pour réaliser le push sur la registry privée
+ - Parametre/Variable environnement pour URL registry privée
+
