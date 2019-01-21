@@ -18,4 +18,5 @@ Test d'intégration continue et de déploiement continu
 Prérequis
  - Credential ID 'registry' pour réaliser le push sur la registry privée
  - Parametre/Variable environnement pour URL registry privée
+ - image jmaven:1.0 = image maven:3.3.3 + parametres proxy dans /usr/share/.../settings.xml
 
